@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+<style>
+    #form_container {
+        width: 50%;
+        border: 1px solid #000;
+        margin: auto;
+    }
+
+    #form_container form {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: rgb(236, 157, 169);
+        padding: 10%;
+    }
+
+    #form_container table {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border: 1px solid black;
+        padding: 5%;
+    }
+
+    #form_name {
+        text-align: center;
+        background-color: rgb(236, 191, 191);
+        margin: 0%;
+    }
+</style>
+
+<body id="form_container">
+    <h1 id="form_name">Registration Form</h1>
+    <form id="form">
+        <!--first name of user-->
+        <label for="fname">First name:</label>
+        <input name="fname" type="string" id="fname">
+        <br>
+        <br>
+        <!--last name of user-->
+        <label for="lname">Last name:</label>
+        <input name="lname" type="string" id="lname">
+        <br>
+        <br>
+        <!--Date Of Birth of user-->
+        <label for="DOB">Date of birth:</label>
+        <input name="DOB" type="date" id="dob">
+        <br>
+        <br>
+        <!--age name of user-->
+        <label for="age">Age:</label>
+        <input name="age" type="number" id="age">
+        <br>
+        <br>
+        <!--city name of user-->
+        <label for="city">City:</label>
+        <select name="city" id="city">
+            <option value="">Select your option</option>
+            <option value="Gandhidham">Gandhidham</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Jamnagar">Jamnagar</option>
+        </select>
+        <br>
+        <br>
+        <!--Gender name of user-->
+        <p>Gender:</p>
+            <input name="gender" id="male" type="radio" value="Male">
+            <label for="male">Male</label>
+            <input name="gender" id="female" type="radio" value="Female">
+            <label for="female">Female</label>
+        <br>
+        <br>
+        <!--Hobby name of user-->
+        <p>Hobby:</p>
+        <input name="hobby" id="drawing" type="checkbox" value="Drawing">
+        <label for="drawing">Drawing</label>
+        <input name="hobby" id="dance" type="checkbox" value="Dance">
+        <label for="dance">Dance</label>
+        <input name="hobby" id="acting" type="checkbox" value="Acting">
+        <label for="acting">Acting</label>
+        <br>
+        <br>
+        <!--Submit and reset button for user-->
+        <button type="button" onclick="showanswer()">Submit</button>
+        <button type="reset" onclick="fun()">Reset</button>
+    </form>
+    <table id="table">
+        <tr>
+            <td>First name:</td>
+            <td id="row1"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Last name:</td>
+            <td id="row2"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>DOB:</td>
+            <td id="row3"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Age:</td>
+            <td id="row4"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>City:</td>
+            <td id="row5">  </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Gender:</td>
+            <td type="text" id="row6"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Hobby:</td>
+            <td id="row7"></td>
+        </tr>
+    </table>
+    <script src="form_with_table_script.js"></script>
+</body>
+
+</html>
